@@ -7,5 +7,5 @@ urlpatterns = [
     path('<int:todo_id>/delete', views.delete, name='delete'),
     path('<int:todo_id>/update', views.update, name='update'),
     path('add/', views.add, name='add'),
-    path('todo/', include('todos.urls')),  # Prefixes all routes with /todo/
+    path('todo/', include('todos.urls'))  # Prefixes all routes with /todo/
 ]
